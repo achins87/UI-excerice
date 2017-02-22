@@ -1,0 +1,307 @@
+body {
+    font-family: arial;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.wrapper {
+    margin:auto;
+    width:800px;
+    max-width:90%;
+    padding:20px;
+    text-align:initial;
+}
+
+.link {
+    cursor: pointer;
+    color: #27a7f7;
+}
+
+.hidden {
+    display: none;
+}
+
+.dialog {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    margin:auto;
+    width:500px;
+    max-width:90%;
+    background:#f9f9f9;
+    padding:10px;
+    box-shadow: #ccc 1px 1px 10px 4px;
+    display: none;
+}
+
+.dialog--active {
+    display: block;
+}
+
+.dialog__close {
+    color:#bbbaba;
+    cursor: pointer;
+    float: right;
+}
+
+.dialog__close:before{
+    font-size:24px;
+    content:"x";
+}
+
+.dialog__title {
+    font-weight: normal;
+}
+
+.dialog__title--blue {
+    color:#27a7f7;
+}
+
+.dialog__content {
+    margin:10px;
+}
+
+
+.input {
+    width:100%;
+    margin-top:20px;
+}
+
+.input--right {
+    text-align: right;
+}
+
+.input > .dropdown, .input > input:not([type=checkbox]) {
+    margin-top:10px;
+}
+
+.input--error > .dropdown, .input--error > input:not([type=checkbox]) {
+    border-color:red;
+}
+
+select.dropdown{
+    display: none;
+}
+
+div.dropdown {
+    position:relative;
+    background:#dedede;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.dropdown__placeholder {
+    font-size: initial;
+    border: none;
+    outline: none;
+    padding:10px;
+    background:#dedede;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.dropdown__placeholder:focus {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+.menu {
+    position:absolute;
+    z-index:10;
+    width:100%;
+    top:100%;
+    left:-1px;
+    margin-top:1px;
+    box-sizing:content-box;
+    box-shadow: #ccc 1px 3px 5px 2px;
+    display: none;
+    border:1px solid #dedede;
+    background: #fff;
+}
+
+.dropdown--active {
+    background: #fff;
+    border:1px solid #27a7f7 !important;
+    box-shadow: #ccc 0px 0px 5px 2px;
+}
+
+.dropdown--active .menu {
+    display: block;
+}
+
+.menu__item {
+    box-sizing:border-box;
+    padding:10px;
+    width:100%;
+}
+
+.menu__item--active, .menu__item--selected, .menu__item:hover{
+    background:#f0f0f0;
+}
+
+.button {
+    padding:10px 20px;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    background:#fff;
+    font-size: initial;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button--grey {
+    background: #dedede;
+}
+
+.button--grey:hover {
+    background:#d0d0d0;
+}
+
+.button--blue {
+    background: #27a7f7;
+    color:#fff;
+}
+
+.button--blue:hover {
+    background: #089af5;
+}
+
+.button--full {
+    width:100%;
+}
+
+.message {
+    display: none;
+    margin:10px 0 0 0;
+}
+
+.message--error {
+    color:red;
+}
+
+.message--active {
+    display:flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid__row {
+    display: flex;
+    margin:20px -10px 0 -10px;
+}
+
+.grid__row--right {
+    text-align: right;
+}
+.grid__column {
+    box-sizing:border-box;
+    width:100%;
+    padding:0 10px;
+}
+
+.grid__column--one {
+    width:8.33%;
+}
+
+.grid__column--two {
+    width:16.66%;
+}
+
+.grid__column--three {
+    width:24.99%;
+}
+
+.grid__column--four {
+    width:33.33%;
+}
+
+.grid__column--five {
+    width:41.66%;
+}
+
+.grid__column--six {
+    width:50%;
+}
+
+.grid__column--seven {
+    width:58.33%;
+}
+
+.grid__column--eight {
+    width:66.66%;
+}
+
+.grid__column--nine {
+    width:74.99%;
+}
+
+.grid__column--ten {
+    width:83.33%;
+}
+
+.grid__column--eleven {
+    width:91.66%;
+}
+
+.grid__column--twelve {
+    width:100%;
+}
+
+
+.grid__column--offset--one {
+    margin-left:8.33%;
+}
+
+.grid__column--offset--two {
+    margin-left:16.66%;
+}
+
+.grid__column--offset--three {
+    margin-left:24.99%;
+}
+
+.grid__column--offset--four {
+    margin-left:33.33%;
+}
+
+.grid__column--offset--five {
+    margin-left:41.66%;
+}
+
+.grid__column--offset--six {
+    margin-left:50%;
+}
+
+.grid__column--offset--seven {
+    margin-left:58.33%;
+}
+
+.grid__column--offset--eight {
+    margin-left:66.66%;
+}
+
+.grid__column--offset--nine {
+    margin-left:74.99%;
+}
+
+.grid__column--offset--ten {
+    margin-left:83.33%;
+}
+
+.grid__column--offset--eleven {
+    margin-left:91.66%;
+}
+
+.grid__column--offset--twelve {
+    margin-left:100%;
+}

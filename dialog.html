@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+
+        <title>Dialog</title>
+        <link rel="stylesheet" type="text/css" class="ui" href="css/common.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="welcome">
+                <h1>Welcome Sumo Logic</h1>
+
+                <h3>It just seems to me that you dont know who you are.</h3>
+                <p><strong>Okay!</strong> So lets go through this simple challange and see if you know things about yourself. Please select your team and your name <a class="link dialogLink">here</a>.</p>
+            </div>
+
+            <div class="recognition hidden">
+                <h1>Ahem!!</h1>
+
+                <h3>Thats impressive</h3>
+                <p>Hey <strong><span class="employee"></span></strong> from the <strong><span class="team"></span></strong> team. It was nice meeting you :)</p>
+                <p class="sendEmail"></p>
+            </div>
+
+            <div class="dialog">
+                <span class="dialog__close closeDialogButton"></span>
+                <div class="dialog__content">
+                    <h2 class="dialog__title dialog__title--blue">Select an Employee</h2>
+
+                    <form id="employeeForm" method="post" action="">
+                        <div class="input">
+                            <input type="checkbox" name="sendEmail" id="sendEmail">
+                            <label for="sendEmail">Send welcome email to employee</label>
+                        </div>
+
+                        <div class="input">
+                            <label for="team">Select a team in the Organization</label>
+                            <select class="dropdown searchable" id="team" name="team" placeholder="Select Team..">
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="employee">Select an Employee</label>
+                            <select class="dropdown searchable" id="employee" name="employee" placeholder="Select Employee.."></select>
+                        </div>
+
+                        <div class="grid">
+                            <div class="grid__row grid__row--right">
+                                <div class="grid__column grid__column--three grid__column--offset--six">
+                                    <div class="button button--grey button--full closeDialogButton">Cancel</div>
+                                </div>
+                                <div class="grid__column grid__column--three">
+                                    <input type="submit" class="button button--blue button--full" value="OK">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="/js/common.js"></script>
+    </body>
+</html>
